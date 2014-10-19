@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<title>Home</title>
+			<meta name="description" content="">
+			<meta name="viewport" content="width=device-width">
+
+			<link href="assets/favicon.ico" rel="shortcut icon">
+			<link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+            <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+			<script src="assets/libs/modernizr-2.6.2.min.js"></script>
+			<link rel='stylesheet' href='assets/libs/slick/slick.css'>
+<link rel='stylesheet' href='assets/css/app.css'>
+	</head>
+	<body class="home">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="blur">
+              <feGaussianBlur stdDeviation="20" />
+            </filter>
+            <filter id="noblur">
+              <feGaussianBlur stdDeviation="0" />
+            </filter>
+          </defs>
+        </svg>
+		<header class="banner"></header>
+  <main class="miror">
+      <canvas id="canvasMiror" class="miror--canvas" width="108" height="192"></canvas>
+      <video autoplay id="videoMiror" class="miror--video blurred"></video>
+      <canvas id="overlayMiror" class="miror--overlay" width="1080" height="1920"></canvas>
+  </main>
+  <section class="interface">
+    <h1 class="interface_title">Bonjour</h1>
+    <nav class="interface_main-nav">
+      <ul id="interfaceNav" class="lvlone show">
+        <li class="nav_item" data-title="Catalogue">
+          <a href="">
+            <svg class="nav_item_icon" viewbox="0 0 32 32">
+              <use xlink:href="assets/img/sprites.svg#icon-catalogue"></use>
+            </svg>
+            <span class="nav_item_title">Catalogue</span>
+          </a>
+          <ul class="lvltwo">
+            <li class="nav_item" data-title="Long">
+              <a href="" class="hair_menu" data-hair="Long">
+                <svg class="nav_item_icon" viewbox="0 0 32 32">
+                  <use xlink:href="assets/img/sprites.svg#icon-long"></use>
+                </svg>
+                <span class="nav_item_title">Long</span>
+              </a>
+            </li>  
+            <li class="nav_item" data-title="Mi-long">
+              <a href="" class="hair_menu" data-hair="Milong">
+                <svg class="nav_item_icon" viewbox="0 0 32 32">
+                  <use xlink:href="assets/img/sprites.svg#icon-milong"></use>
+                </svg>
+                <span class="nav_item_title">Mi-Long</span>
+              </a>
+            </li>
+            <li class="nav_item" data-title="Court">
+              <a href="" class="hair_menu" data-hair="Court">
+                <svg class="nav_item_icon" viewbox="0 0 32 32">
+                  <use xlink:href="assets/img/sprites.svg#icon-court"></use>
+                </svg>
+                <span class="nav_item_title">Court</span>
+              </a>
+            </li>
+          </ul>
+        </li> 
+        <li class="nav_item" data-title="Couleurs">
+          <a href="">
+            <svg class="nav_item_icon" viewbox="0 0 32 32">
+              <use xlink:href="assets/img/sprites.svg#icon-couleurs"></use>
+            </svg>
+            <span class="nav_item_title">Couleurs</span>
+          </a>
+          <ul class="lvltwo"> 
+            <li class="nav_item_color" data-title="Blond">
+              <a href="" class="color_menu blond" data-color="blond">
+                <span class="nav_item_icon"></span>
+                <span class="nav_item_title">Blond</span>
+              </a>
+            </li>  
+            <li class="nav_item_color" data-title="Brun">
+              <a href="" class="color_menu brun" data-color="brun">
+                <span class="nav_item_icon"></span>
+                <span class="nav_item_title">Brun</span>
+              </a>
+            </li>
+            <li class="nav_item_color" data-title="Noir">
+              <a href="" class="color_menu noir" data-color="noir">
+                <span class="nav_item_icon"></span>
+                <span class="nav_item_title">Noir</span>
+              </a>
+            </li>
+            <li class="nav_item_color" data-title="Roux">
+              <a href="" class="color_menu roux" data-color="roux">
+                <span class="nav_item_icon"></span>
+                <span class="nav_item_title">Roux</span>
+              </a>
+            </li>
+            <li class="nav_item_color" data-title="Autres">
+              <a href="" class="color_menu autres" data-color="autres">
+                <span class="nav_item_icon"></span>
+                <span class="nav_item_title">Autres</span>
+              </a>
+            </li> 
+            <li class="nav_item_color">
+              <a href="" class="color_menu" data-color="naturel">
+                <span class="nav_item_icon"></span>
+                <span class="nav_item_title">Naturel</span>
+              </a>
+            </li>
+          </ul>
+        </li> 
+        <li class="nav_item" data-title="Activités">
+          <a href="">
+            <svg class="nav_item_icon" viewbox="0 0 32 32">
+              <use xlink:href="assets/img/sprites.svg#icon-activites"></use>
+            </svg>
+            <span class="nav_item_title">Activités</span>
+          </a>
+        </li> 
+      </ul>  
+    </nav>
+    <div id="threelvlinterface" class="threelvlinterface"></div>
+    <div class="bg-interface"></div>
+  </section>
+
+
+		<footer></footer>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/libs/jquery-2.1.1.min.js"><\/script>')</script>
+
+		<!-- scripts -->
+		<script src='assets/libs/headtrackr.js'></script>
+<script src='assets/libs/slick/slick.min.js'></script>
+<script src='assets/json/color.js'></script>
+<script src='assets/json/hair.js'></script>
+<script src='assets/js/app.js'></script>
+
+	</body>
+</html>

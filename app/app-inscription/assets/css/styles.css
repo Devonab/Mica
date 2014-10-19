@@ -1,0 +1,429 @@
+/* ------------------- */
+/*  Styles.css         */
+/* ------------------- */
+
+@import url(normalize.css);
+@import url(fonts.css);
+
+/* ------------------- */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'latoregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 16px; font-size: 1.6rem;
+    font-family: 'latolight', sans-serif;
+} 
+
+html { width: 100%; height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 25px;
+}
+
+
+#overlay,
+#overlay_launch {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    pointer-events: none;
+    display: none;
+}
+
+#overlay_launch { opacity: 0; display: block;}
+
+main { x
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    text-align: center;
+    border: 4px solid #262626;
+    
+}
+
+section {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+/*
+h1 a {
+    display: block;
+    width: 71px; 
+    height: 67px;
+    background: url(../img/logo.svg) no-repeat;
+    margin: auto;
+    text-indent: -99999px;
+    margin-top: 30px;
+}
+*/
+
+h1 a {
+    display: block;
+    width: 216px; 
+    height: 32px;
+    background: url(../img/logo2.svg) no-repeat;
+    margin: auto;
+    text-indent: -99999px;
+    margin-top: 30px;
+}
+
+
+
+
+#button {
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 90px;
+    border: 4px solid #262626;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+    color: #262626;  
+}
+
+@-webkit-keyframes sizeChange {
+  0%, 100% {
+    font-size: 26px;
+  }
+  50% {
+    font-size: 30px;
+  }    
+}
+@keyframes sizeChange {
+  0%, 100% {
+    font-size: 26px;
+  }
+  50% {
+    font-size: 30px;
+  }
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-left: 110px;
+    font-size: 14px; font-size: 1.4rem;
+    font-family: 'latomedium', sans-serif;
+}
+
+.form_button { padding: 12px 0; display:inline-block; }
+
+form input {
+    display: block;
+    margin-left: 110px;
+    outline: none;
+    font-family: 'latohairline', sans-serif;
+}
+
+.sizeChange {
+    background-color: #fff !important;
+    color: #000;
+    -webkit-animation: sizeChange .4s ease-out;
+            animation: sizeChange .4s ease-out;
+    
+}
+
+#button button {
+    width: 250px;
+    height: 90px;
+    background: none;
+    border: none;
+    margin: -2px 0 0 -2px;
+}
+
+    #button button:active,
+    #button button:focus {
+        background-color: #fff;
+        color: #000;
+    }
+
+form {
+    position: relative;
+    width: 200%;
+    white-space: nowrap;
+}
+
+.form_button { position: relative; }
+
+form div input {
+    background: none;
+    border: none;
+}
+
+#back_name, #back_tel {
+    position: absolute;
+    background: #262626;
+    height: 90px;
+    left: -582px;
+    width: 100%;
+} 
+
+.button {
+    position: absolute;
+    z-index: 100;
+    width: 85px;
+    height: 85px;
+    border-radius: 999px;
+    border: 3px solid #262626;
+/*	box-shadow: inset 3px 2px 11px rgba(0, 0, 0, 0.1), 4px 2px 11px rgba(0, 0, 0, 0.1);*/
+    top: -2px;
+    left: -2px;
+    background: #fff;
+}
+
+.button:active, .button:focus {
+    background: #fff;
+}
+
+
+.button:active .name { background-position: 0 -30px; }
+.button:active .telephone { background-position: -29px -46px; }
+
+.name {
+    display: block;
+    text-indent: -999px;
+    width: 29px;
+    height: 30px;
+    margin: 28px auto;
+    background: url(../img/sprite.svg) 0 0 no-repeat;
+    
+}
+
+.telephone {
+    display: block;
+    text-indent: -999px;
+    width: 29px;
+    height: 46px;
+    margin: 20px auto;
+    background: url(../img/sprite.svg) no-repeat;
+    background-position: -29px 0;
+}
+
+
+/* ---------------------- */
+
+@-webkit-keyframes shake2 {
+  20%, 60% { 
+    transform: translateX(5px); 
+  }
+  40%, 80% { 
+    transform: translateX(-10px); 
+  }
+}
+
+@keyframes shake2 {
+  10%, 70% { 
+    transform: translateX(5px); 
+  }
+  30%, 90% { 
+    transform: translateX(-10px); 
+  }
+}
+
+.errorLittle {
+  -webkit-animation: shake2 0.5s 0.1s ease-in-out;
+  animation: shake2 0.5s 0.1s ease-in-out;
+}
+
+/* ---------------------- */
+
+@-webkit-keyframes shake {
+  20%, 60% { 
+    transform: translateX(5px); 
+  }
+  40%, 80% { 
+    transform: translateX(-10px); 
+  }
+}
+
+@keyframes shake {
+  20%, 60% { 
+    transform: translateX(5px); 
+  }
+  40%, 80% { 
+    transform: translateX(-10px); 
+  }
+}
+
+
+
+.error {
+  -webkit-animation: shake 0.4s 0.1s ease-in-out;
+  animation: shake 0.4s 0.1s ease-in-out;
+}
+
+/* ---------------------- */
+
+@-webkit-keyframes move {
+  from { opacity: 0; transform: translateY(200px); }
+  to   { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes move {
+  from { transform: translateY(200px); }
+  to   { transform: translateY(0px); }
+}
+
+#photo, #end {
+    position: relative;
+    display: none;
+
+}
+
+#photo div {
+    display: block;
+    width: 32px;
+    height: 21px;
+    background: url(../img/sprite.svg) no-repeat -58px 0;
+    text-indent: -99999px;
+    margin: auto;
+}
+
+h2, h3 {
+    color: #262626;
+    font-size: 16px; font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+#photo h2 { margin-top: 15px; }
+#end h3 { margin-top: 25px;}
+
+.moveTitle {
+    -webkit-animation: move 0.6s 0.1s ease-in-out;
+    animation: move 0.6s 0.1s ease-in-out;
+}
+
+#compteur {
+    font-style: 'latomedium', sans-serif;
+    display: none;
+    top: -67px;
+    position: relative;
+    color: #262626;
+}
+
+#end button {
+    width: 0px;
+    height: 0px;
+    background: #3a3a3a;
+    color: #fff;
+    box-shadow: none;
+    margin: auto;
+    border: 4px solid #3a3a3a;
+}
+
+/* --------------------------- */
+
+
+#loader {
+    margin: auto;
+    width: 70px;
+    text-align: center;
+    display: none;
+/*
+    poisition: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+*/
+}
+
+#loader > div {
+  width: 18px;
+  height: 18px;
+  background-color: #262626;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  -moz-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#loader .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+#loader .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@-moz-keyframes bouncedelay {
+  0%, 80%, 100% { -moz-transform: scale(0.0) }
+  40% { -moz-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+#profillink {
+    position: absolute;
+    bottom: 55px;
+    margin: 0 auto;
+    left: 40%;
+    color: #262626;
+    text-decoration: none;
+}
+
+    .appear { opacity: .95 !important; pointer-events: all !important;}
+
+    #overlay_launch h1 {
+        font-size: 18px; font-size: 1.8rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    }
