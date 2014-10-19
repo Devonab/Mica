@@ -10,7 +10,7 @@ La couleur ne convient pas ? Vous pouvez facilement la changer. Après votre cho
 Le coiffeur, via l'application synchronisée au miroir, recevra les détails de la coupe choisie ainsi que la dernière coupe du client pour recevoir des informations plus précises.
 
 Projet réalisé dans le cadre du workshop iLab.
-==============================================
+----------------------------------------------------
 
 Maurine Bouillet, 3TID2
 Alexandre Buruk, 3TID2
