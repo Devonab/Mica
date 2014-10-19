@@ -11,10 +11,10 @@ Le coiffeur, via l'application synchronisée au miroir, recevra les détails de 
 
 **Projet réalisé dans le cadre du workshop iLab.**
 
--[Maurine Bouillet](https://twitter.com/maurine_bee), 3TID2
--[Alexandre Buruk](https://twitter.com/devonab), 3TID2
--[Kevin Delval](https://twitter.com/gotabird), 3TID2
--[Émile Duval](https://twitter.com/Emile_D_), 3TID2
--[Delphine Grégoire](https://twitter.com/DelphineGT), 3TID2
--[Vincent Lazaron](https://twitter.com/LazaronV), 3TID2
--[Tiby Voesters](https://twitter.com/TibyOctet), 3TID2
+- [Maurine Bouillet](https://twitter.com/maurine_bee), 3TID2
+- [Alexandre Buruk](https://twitter.com/devonab), 3TID2
+- [Kevin Delval](https://twitter.com/gotabird), 3TID2
+- [Émile Duval](https://twitter.com/Emile_D_), 3TID2
+- [Delphine Grégoire](https://twitter.com/DelphineGT), 3TID2
+- [Vincent Lazaron](https://twitter.com/LazaronV), 3TID2
+- [Tiby Voesters](https://twitter.com/TibyOctet), 3TID2
